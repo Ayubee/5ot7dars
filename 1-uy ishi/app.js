@@ -1,15 +1,3 @@
-// const drums = document.querySelectorAll(".drum");
-
-// drums.forEach((drum) => {
-//   drum.addEventListener("click", () => {
-//     if (drum.textContent == "w") {
-//     }
-//   });
-// });
-// uy ishi
-// 52
-// 58
-// 59
 const showBtn = document.getElementById("show-btn");
 const modal = document.getElementById("modal");
 const closeBtn = document.getElementById("close-btn");
@@ -33,23 +21,4 @@ document.addEventListener("keydown", (e) => {
   if (e.key == "Escape") {
     addHidden();
   }
-});
-
-const insert = document.getElementById("insert");
-
-window.addEventListener("keydown", (e) => {
-  insert.innerHTML = `
-    <div class="key">
-        ${e.key == " " ? "Space" : e.key}
-      <small>event.key</small>    
-    </div>
-    <div class="key">
-        ${e.keyCode}
-      <small>event.keyCode</small>    
-    </div>
-    <div class="key">
-        ${e.code}
-      <small>event.code</small>    
-    </div>
-  `;
 });
